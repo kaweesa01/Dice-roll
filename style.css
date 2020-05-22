@@ -9,6 +9,56 @@
     
 }
 
+
+
+/* on load backdrop*/
+
+.setScore-bd{
+    background-color: rgba(235, 79, 79,0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0%);
+    transition: transform 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.setScore-up{
+    transform: translateY(-100%);
+    transition: transform 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.warning{
+    color: red;
+}
+.btn-set{
+    margin-top: 60px;
+    background-color:#555 ;
+    color: #EB4D4D;
+    padding: 20px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 10px;
+}
+input{
+   height: 20px;
+   padding: 20px 10px;
+   margin-bottom: 40px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 50px;
+   border-top-left-radius: 50px;
+   border-top-right-radius: 10px;
+}
+
+input:focus{
+    outline: none;
+    font-size:large;
+}
+/****************************************************************/
+
 .clearfix::after {
     content: "";
     display: table;
@@ -134,16 +184,7 @@ button {
         background-color: burlywood;
         padding: 10px;
     }
-input{
-    position: absolute;
-    width: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 2px solid black;
-    font-family: Lato;
-    font-size: 20px;
-    width: 100px;
-}
+
 button:hover { font-weight: 600; }
 button:hover i { margin-right: 20px; }
 
@@ -165,7 +206,6 @@ i {
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
-.btn-set { top: 550px;}
 .dice {
     position: absolute;
     left: 50%;
